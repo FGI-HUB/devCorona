@@ -1,0 +1,7 @@
+{
+  "name": "devCorona",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
