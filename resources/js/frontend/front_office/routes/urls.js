@@ -1,8 +1,8 @@
 // this file contains urls
 const urls = {
-    HOME: "/",
+    HOME: "/news",
+    MAP: "/",
     LOGIN: "/login",
     NOTFOUND: "/404"
   };
   export default urls;
-  

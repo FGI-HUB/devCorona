@@ -8,9 +8,6 @@ import './style.local.scss';
 export default
 @connect((state, props) => ({}))
 class Navbar extends React.Component {
-  componentWillMount() {
-    document.title = 'Home | KARAF'
-  }
 
   logout(){
     clearToken()
@@ -43,7 +40,7 @@ class Navbar extends React.Component {
                 <input className="form-control mr-sm-2 navFormInput" type="search" placeholder="Rechercher" aria-label="Search" />
                 <button className="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
               </form>
-              
+
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
