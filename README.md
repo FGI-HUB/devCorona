@@ -1,10 +1,11 @@
-## FGI SOCIAL NETWORK
+## DEV CORONA
 
-Réseau social FGI réalisé avec :
+App de suivie et de gestion de la crise Corona :
 
 - [Laravel 6](https://laravel.com/docs).
 - [Node Js 12.14](https://nodejs.org/en/).
 - [ReactJs](https://fr.reactjs.org/).
+- [Ionic](https://ionicframework.com/).
 
 
 ### Prérequis
@@ -62,4 +63,7 @@ Avant de lancer toutes les commandes, ouvrez le fichier .env et configurez le co
 
     4. Lancement de React (FRONTEND)
     npm run dev
+
+
+A compléter...
     
