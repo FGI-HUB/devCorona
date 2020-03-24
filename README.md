@@ -66,6 +66,9 @@ Avant de lancer toutes les commandes, ouvrez le fichier <b>.env </b> à la racin
 
     4. Lancement de React (FRONTEND)
     npm run watch
+    
+    4. Lancement de L'app Mobile (MOBILE)
+    ionic serve
 
 
 **La commande npm Install peut dans certains cas neccéssité les privilèges administrateur, donc ouvrez un terminal en tant qu'administrateur pour ceux qui sont sous Window. Pour ceux utilisant les système unix utiliser la avec la commande sudo (`sudo npm install` )**
