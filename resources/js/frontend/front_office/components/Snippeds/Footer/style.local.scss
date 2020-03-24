@@ -1,0 +1,15 @@
+.footer_wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 1px 2px 5px darkblue;
+    z-index: 2;
+    padding-top: 10px;
+  }
+
+  .footer_wrapper .row.text-center p{
+      width: 100%;
+  }

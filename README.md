@@ -64,7 +64,7 @@ Avant de lancer toutes les commandes, ouvrez le fichier <b>.env </b> à la racin
     php artisan passport:install
     php artisan serve
 
-    4. Lancement de React (FRONTEND)
+    5. Lancement de React (FRONTEND)
     npm run watch
 
 
