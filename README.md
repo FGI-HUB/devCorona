@@ -64,10 +64,10 @@ Avant de lancer toutes les commandes, ouvrez le fichier <b>.env </b> à la racin
     php artisan passport:install
     php artisan serve
 
-    5. Lancement de React (FRONTEND)
+    4. Lancement de React (FRONTEND)
     npm run watch
     
-    4. Lancement de L'app Mobile (MOBILE)
+    5. Lancement de L'app Mobile (MOBILE)
     ionic serve
 
 
