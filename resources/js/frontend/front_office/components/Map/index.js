@@ -7,6 +7,8 @@ import './style.local.scss'
 import GoogleMapReact from 'google-map-react';
 
 import Navbar from "../../components/Snippeds/Navbar/index"
+import Footer from "../../components/Snippeds/Footer/index"
+import Floating from "./Floating/index"
 
 
 
@@ -35,21 +37,25 @@ class MapComponent extends React.Component {
 
   	return (
   		<div className="body_map">
-				<Navbar />
-				<div style={{ height: '100vh', width: '100%' }}>
-	        <GoogleMapReact
-					// bootstrapURLKeys={{ key: "AIzaSyCycHdESmkrI-TR_-pwZO_yJj0w51nytJg" }}
-	          bootstrapURLKeys={{ key: "#" }}
-	          defaultCenter={this.props.center}
-	          defaultZoom={this.props.zoom}
-	        >
-	          <AnyReactComponent
-	            lat={4.046434}
-	            lng={9.699188}
-	            text="My Marker"
-	          />
-	        </GoogleMapReact>
-	      </div>
+			<Navbar />
+			<div className="map_wrapper">
+				<GoogleMapReact
+						// bootstrapURLKeys={{ key: "AIzaSyCycHdESmkrI-TR_-pwZO_yJj0w51nytJg" }}
+				bootstrapURLKeys={{ key: "#" }}
+				defaultCenter={this.props.center}
+				defaultZoom={this.props.zoom}
+				>
+				<AnyReactComponent
+					lat={4.046434}
+					lng={9.699188}
+					text="My Marker"
+				/>
+				</GoogleMapReact>
+
+				<Floating />
+
+				<Footer />
+	      	</div>
   		</div>
   	)
   }
