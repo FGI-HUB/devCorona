@@ -51,7 +51,7 @@ Avant de lancer toutes les commandes, ouvrez le fichier <b>.env </b> à la racin
 ## Mise en place du projet
 
     1. Cloner le projet 
-    git clone https://github.com/stephcyrille/SocialTTIC.git
+    git clone https://github.com/FGI-HUB/devCorona.git
 
     2. Téléchargement des dépendances php 
     composer install
