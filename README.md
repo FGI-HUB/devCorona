@@ -60,14 +60,14 @@ Avant de lancer toutes les commandes, ouvrez le fichier <b>.env </b> à la racin
     npm install
 
     4. Lancement de Laravel  (BACKEND)
-    php artisant migrate
+    php artisan migrate
     php artisan passport:install
     php artisan serve
 
-    4. Lancement de React (FRONTEND)
+    5. Lancement de React (FRONTEND)
     npm run watch
     
-    5. Lancement de L'app Mobile (MOBILE)
+    6. Lancement de L'app Mobile (MOBILE)
     ionic serve
 
 
