@@ -20,10 +20,10 @@ class Navbar extends React.Component {
 
     return (
       <div className="">
-        <nav className="navbar navbar-expand-lg navbar-dark sticky-top" style={{ backgroundColor: "#bda42c" }}>
+        <nav className="navbar navbar-expand-lg navbar-dark sticky-top" style={{ backgroundColor: "#2fd196" }}>
           <div className="container">
             <a className="navbar-brand" href="#">
-              DevCorona
+              <img className="img-fluid rounded-circle" src="/images/logo.png" width="30px" />
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@ class Navbar extends React.Component {
                 <li className="nav-item">
                   {/* <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a> */}
                     <a className="nav-link" href="#">
-                      Actualité 
+                      <img className="img-fluid" src="/images/logo_text.png" width="120px"/>
                       {/* <span className="sr-only"></span> */}
                     </a>
                 </li>

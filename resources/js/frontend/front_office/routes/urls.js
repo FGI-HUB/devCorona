@@ -1,7 +1,7 @@
 // this file contains urls
 const urls = {
-    HOME: "/news",
-    MAP: "/",
+    HOME: "/",
+    MAP: "/map",
     LOGIN: "/login",
     NOTFOUND: "/404"
   };
