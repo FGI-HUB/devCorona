@@ -10,27 +10,44 @@ export class MapContainer extends React.Component {
     super(props);
     
     this.state = {
-      selectedPlace : {
-        name: "tesr"
-      }
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {},
     }
   }
   
-  onMarkerClick(mapProps, map, clickEvent) {
-    alert("hello")
-  }
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  
+
+  onMapClicked = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      })
+    }
+  };
+
+
 
   render(){
 	const mapStyles = {
 		width: '100%',
 		height: '100%'
-	};
+  };
+  
 
   	return (
   		<div className="map">
 			<Map
-				google={this.props.google}
-				zoom={16}
+        google={this.props.google}
+        onClick={this.onMapClicked}
+				zoom={14}
 				style={mapStyles}
 				initialCenter={{
 					lat: 4.048593,
@@ -40,7 +57,9 @@ export class MapContainer extends React.Component {
         <Marker onClick={this.onMarkerClick}
                 name={'Current location'} />
 
-        <InfoWindow onClose={this.onInfoWindowClose}>
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}>
             <div>
               <h1>{this.state.selectedPlace.name}</h1>
             </div>
